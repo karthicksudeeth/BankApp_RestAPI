@@ -12,8 +12,6 @@ import org.junit.jupiter.api.Test
 class BankServiceTest{
     val dataSource: BankDataSource = mockk(relaxed = true)
     val bankService:BankService= BankService(dataSource)
-
-
     @Test
     fun `should call its data source to retrieve banks`(){
 //        every { dataSource.getBanks() } returns emptyList()
